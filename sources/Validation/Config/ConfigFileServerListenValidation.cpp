@@ -137,7 +137,7 @@ bool ConfigFileServerListenValidation::validatePort(const int &port)
 	// Validate port
 	// lower than 1024 needs root access to bind
 	// higher than 65535 is bigger than the maximum port number
-	if (port < 1025 || port > 65535)
+	if (port < 79 || port > 65535)
 		return (false);
 	listenPort = true;
 	return (true);
